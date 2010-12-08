@@ -70,7 +70,7 @@ alias l="ls -lAh"
 alias ..="cd .."
 
 #Editor TextMate
-EDITOR=mate
+export EDITOR=mate
 alias matew="mate -w"
 
 #Git
@@ -90,6 +90,8 @@ function gco {
     git checkout $1
   fi
 }
+
+alias git=hub
 
 #Other Alias
 alias linode="ssh -p $LINODEPORT $LINODEUSER"
