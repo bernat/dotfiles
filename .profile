@@ -70,7 +70,7 @@ alias l="ls -lAh"
 alias ..="cd .."
 
 #Editor TextMate
-export EDITOR=mate
+export EDITOR=mvim
 alias matew="mate -w"
 
 #Git
@@ -82,6 +82,8 @@ alias gd="git diff"
 alias gdc="git diff --cached"
 alias gc="git commit -v"
 alias gca="git commit -a"
+alias glog="git log --decorate --graph"
+alias gco="git checkout"
 
 function gco {
   if [ -z "$1" ]; then
